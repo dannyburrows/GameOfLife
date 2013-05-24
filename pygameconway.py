@@ -133,30 +133,4 @@ while done == False:
 	
 	print_board(current_gen)
 	clock.tick(40)
-		
-'''
-while done == False:
-	for event in pygame.event.get():
-		if event.type == pygame.QUIT:
-			done = True
-		if event.type == pygame.MOUSEBUTTONDOWN:
-			pos = pygame.mouse.get_pos()
-			
-			column = pos[0] // (width + margin)
-			row = pos[1] // (height + margin)
-			
-			if current_gen[row][column] == 0:
-				current_gen[row][column] = 1
-			else:
-				current_gen[row][column] = 0
-			
-	screen.fill(black)
 	
-	print_board(current_gen)
-	clock.tick(20)
-	
-	time.sleep(1)
-	current_gen = evolve(current_gen)	
-	
-pygame.quit()
-'''
